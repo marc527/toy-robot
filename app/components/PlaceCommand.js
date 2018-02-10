@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { validatePosition } from '../util/helpers'
 
 class PlaceCommand extends React.Component {
@@ -86,6 +87,14 @@ class PlaceCommand extends React.Component {
       </div>
     )
   }
+}
+
+PlaceCommand.propTypes = {
+  x: PropTypes.number.isRequired,
+  y: PropTypes.number.isRequired,
+  direction: PropTypes.string.isRequired,
+  handleSubmit: PropTypes.func.isRequired,
+  onUpdate: PropTypes.func.isRequired
 }
 
 export default PlaceCommand

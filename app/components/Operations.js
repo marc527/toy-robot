@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import { validatePosition, calculateNextDirection } from '../util/helpers'
 
@@ -63,6 +64,14 @@ class Operations extends React.Component {
       </div>
     )
   }
+}
+
+Operations.propTypes = {
+  x: PropTypes.number.isRequired,
+  y: PropTypes.number.isRequired,
+  direction: PropTypes.string.isRequired,
+  onMove: PropTypes.func.isRequired,
+  onRotate: PropTypes.func.isRequired
 }
 
 export default Operations

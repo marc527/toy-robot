@@ -1,9 +1,8 @@
 import React from 'react'
 import Table from '../components/Table'
-
-import PlaceCommand from './PlaceCommand'
-import Operations from './Operations'
-import Report from './Report'
+import PlaceCommand from '../components/PlaceCommand'
+import Operations from '../components/Operations'
+import Report from '../components/Report'
 
 class ControlPanel extends React.Component {
 

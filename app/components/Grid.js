@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Robot from './Robot'
 
 class Grid extends React.Component {
@@ -24,6 +25,14 @@ class Grid extends React.Component {
       </div>
     )
   }
+}
+
+Grid.propTypes = {
+  column_number: PropTypes.number.isRequired,
+  row_number: PropTypes.number.isRequired,
+  x: PropTypes.number.isRequired,
+  y: PropTypes.number.isRequired,
+  direction: PropTypes.string.isRequired
 }
 
 export default Grid
