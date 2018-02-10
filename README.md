@@ -3,9 +3,9 @@
 1. npm
 2. Chrome 6.0+ (prefered)
 ## Install dependencies
-- npm install
+    npm install
 ## Start
-- npm run start
+    npm run start
 ## Example Input and Output:
 ### Example a
 
