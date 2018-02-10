@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 class Report extends React.Component {
 
@@ -18,6 +19,12 @@ class Report extends React.Component {
       </div>
     )
   }
+}
+
+Report.propTypes = {
+  x: PropTypes.number.isRequired,
+  y: PropTypes.number.isRequired,
+  direction: PropTypes.string.isRequired
 }
 
 export default Report

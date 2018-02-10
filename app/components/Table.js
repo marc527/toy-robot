@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Grid from './Grid'
 
 class Table extends React.Component {
@@ -36,6 +37,14 @@ class Table extends React.Component {
       </div>
     )
   }
+}
+
+Table.propTypes = {
+  column: PropTypes.number.isRequired,
+  row: PropTypes.number.isRequired,
+  x: PropTypes.number.isRequired,
+  y: PropTypes.number.isRequired,
+  direction: PropTypes.string.isRequired
 }
 
 export default Table
