@@ -6,6 +6,7 @@ $border-color: #212121;
     max-height: 200px;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
+    // transform: rotate3d(1, 0, 0, 180deg);
 
     .grid {
       display: inline-grid;
