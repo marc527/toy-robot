@@ -18,8 +18,6 @@ class Table extends React.Component {
       grids[r] = []
 
       for (c=0; c<column; c++) {
-        // grids_row.push(<Grid column_number={c} row_number={r} x={x} y={y} direction={direction} key={index} />);
-        // grids.push(<Grid column_number={c} row_number={r} x={x} y={y} direction={direction} key={index} />)
         grids[r].push(<Grid column_number={c} row_number={r} x={x} y={y} direction={direction} key={index} />);
         index++;
       }
