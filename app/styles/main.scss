@@ -1,0 +1,47 @@
+$border-color: #212121;
+
+#app {
+  .main-table {
+    max-width: 200px;
+    max-height: 200px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+
+    .grid {
+      display: inline-grid;
+      height: 40px;
+      width: 40px;
+      box-sizing: border-box;
+      border-top: 1px solid $border-color;
+      border-left: 1px solid $border-color;
+      text-align: center;
+      line-height: 40px;
+
+      &:nth-child(5n) {
+        border-right: 1px solid $border-color;
+      }
+
+      &:nth-child(n+21) {
+        border-bottom: 1px solid $border-color;
+      }
+
+      .robot {
+        &.north {
+          transform: rotate(270deg);
+        }
+
+        &.west {
+          transform: rotate(180deg);
+        }
+
+        &.south {
+          transform: rotate(90deg);
+        }
+
+        &.east {
+          transform: rotate(0deg);
+        }
+      }
+    }
+  }
+}
