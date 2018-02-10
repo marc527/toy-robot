@@ -24,6 +24,9 @@ class PlaceCommand extends React.Component {
   }
 
   handleXChange = (e) => {
+
+    this.props.onUpdate(false)
+
     this.validatePosInput(e) && this.setState({
         ...this.state,
         x: parseInt(e.target.value)
@@ -32,6 +35,8 @@ class PlaceCommand extends React.Component {
 
   handleYChange = (e) => {
 
+    this.props.onUpdate(false)
+
     this.validatePosInput(e) && this.setState({
       ...this.state,
       y: parseInt(e.target.value)
@@ -39,6 +44,9 @@ class PlaceCommand extends React.Component {
   }
 
   handleDirection = (e) => {
+
+    this.props.onUpdate(false)
+
     this.setState({
       ...this.state,
       direction: e.target.value

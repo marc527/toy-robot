@@ -42,6 +42,13 @@ class ControlPanel extends React.Component {
     })
   }
 
+  toggleOperationsPanel = (showOperations) => {
+    this.setState({
+      ...this.state,
+      showOperations
+    })
+  }
+
   render() {
     let {x, y, direction, showOperations} = this.state
 
@@ -57,7 +64,7 @@ class ControlPanel extends React.Component {
 
        <Report x={x} y={y} direction={direction} />
 
-       <PlaceCommand x={x} y={y} direction={direction} handleSubmit={this.initialSetup}/>
+       <PlaceCommand x={x} y={y} direction={direction} handleSubmit={this.initialSetup} onUpdate={this.toggleOperationsPanel} />
        { showOperations && <Operations
           x={x}
           y={y}
