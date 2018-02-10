@@ -14,13 +14,16 @@ class Table extends React.Component {
     let grids = [];
 
     for (r=0; r<row; r++) {
+
+      grids[r] = []
+
       for (c=0; c<column; c++) {
-        grids.push(<Grid column_number={c} row_number={r} x={x} y={y} direction={direction} key={index} />)
+        grids[r].push(<Grid column_number={c} row_number={r} x={x} y={y} direction={direction} key={index} />);
         index++;
       }
     }
 
-    return grids
+    return grids.reverse()
   }
 
   render() {

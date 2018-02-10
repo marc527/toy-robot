@@ -25,10 +25,10 @@ class Operations extends React.Component {
 
     switch (direction) {
       case 'north':
-        next_y = y-1
+        next_y = y+1
         break;
       case 'south':
-        next_y = y+1
+        next_y = y-1
         break;
       case 'west':
         next_x = x-1
